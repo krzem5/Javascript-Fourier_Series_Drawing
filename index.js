@@ -1,5 +1,5 @@
 var cnv,ctx,f,path=[]
-var W=800,H=800,SKIP=5,T=0
+var W=800,H=800,SKIP=4,T=0
 
 
 
@@ -21,7 +21,7 @@ function draw(){
 	ctx.fillRect(0,0,cnv.width,cnv.height)
 	var p=draw_fourier(f,T,[cnv.width/2,100],[100,cnv.height/2],Math.PI/2,0)
 	path.push(p)
-	ctx.lineWidth=5
+	ctx.lineWidth=4
 	ctx.beginPath()
 	ctx.moveTo(path[0].x,path[0].y)
 	for (var p of path){
